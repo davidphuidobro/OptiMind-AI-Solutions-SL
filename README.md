@@ -1,1 +1,0 @@
-# OptiMind-AI-Solutions-SL
