@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OptiMind AI Solutions</title>
+<style>
+  :root {
+    --color-primario: #007ACC;
+    --color-secundario: #004080;
+    --color-acento: #00bfa5;
+    --color-fondo: #f9f9f9;
+    --color-texto: #333;
+    --color-blanco: #fff;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+  }
+  header {
+    background: linear-gradient(to right, rgba(0,122,204,0.7), rgba(0,191,165,0.7)), url('https://source.unsplash.com/1600x600/?artificial-intelligence') center/cover no-repeat;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 120px 20px;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  header p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  header button {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  header button:hover {
+    background-color: #009e8c;
+  }
+  nav {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s;
+  }
+  nav a:hover {
+    background-color: var(--color-secundario);
+  }
+  section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+  }
+  .card {
+    background: var(--color-blanco);
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  h2 {
+    color: var(--color-primario);
+    margin-bottom: 15px;
+  }
+  ul {
+    list-style: disc inside;
+    margin-left: 20px;
+  }
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .galeria img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  form {
+    display: grid;
+    gap: 15px;
+  }
+  input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button i {
+    margin-right: 8px;
+  }
+  button:hover {
+    background-color: #009e8c;
+  }
+  footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px 20px;
+  }
+  footer a {
+    color: var(--color-acento);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  footer a:hover {
+    color: #00ffe4;
+  }
+  @media(max-width: 768px){
+    header h1 {
+      font-size: 2rem;
+    }
+    nav {
+      flex-direction: column;
+    }
+    nav a {
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>OptiMind AI Solutions</h1>
+  <p>Transformamos tus ideas en soluciones inteligentes para tu negocio</p>
+  <button onclick="mostrarMensaje()"><i>🚀</i> ¡Conoce más!</button>
+</header>
+
+<nav>
+  <a href="#mision">Misión</a>
+  <a href="#vision">Visión</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#galeria">Galería</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="mision">
+  <div class="card">
+    <h2>Misión</h2>
+    <p>Nuestra misión es democratizar el acceso a la inteligencia artificial, ofreciendo herramientas adaptadas y accesibles que impulsen la productividad y competitividad de las PYMES.</p>
+    <p>Creemos en el poder de la tecnología para transformar negocios y facilitar la toma de decisiones basada en datos reales. Nos enfocamos en hacer de la IA una herramienta confiable, cercana y valiosa para nuestros clientes.</p>
+  </div>
+</section>
+
+<section id="vision">
+  <div class="card">
+    <h2>Visión</h2>
+    <p>Aspiramos a convertirnos en un referente internacional en soluciones de IA para negocios, destacando por nuestra adaptabilidad, innovación práctica y compromiso total con nuestros clientes.</p>
+    <p>Visualizamos un futuro donde cada PYME pueda acceder a la inteligencia artificial como un socio estratégico, capaz de generar ventajas competitivas sostenibles.</p>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="card">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Desarrollo de IA personalizada para Retail, Logística y Servicios Profesionales.</li>
+      <li>Algoritmos de optimización, análisis predictivo y chatbots multicanal.</li>
+      <li>Plataforma en la nube intuitiva y segura.</li>
+      <li>Formación y soporte técnico integral para asegurar la adopción exitosa.</li>
+    </ul>
+    <button onclick="mostrarMensaje()"><i>💡</i> Ver más detalles</button>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="card">
+    <h2>Galería de Soluciones</h2>
+    <div class="galeria">
+      <img src="Imagen 1.png" alt="Solución IA 1" />
+      <img src="Imagen 2.png" alt="Solución IA 2" />
+      <img src="Imagen 3.png" alt="Solución IA 3" />
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="card">
+    <h2>Contacto</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+      <input type="email" id="email" placeholder="Tu correo electrónico" required />
+      <textarea id="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+      <button type="submit"><i>✉️</i> Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 OptiMind AI Solutions SL | Calle Piamonte 23, Madrid</p>
+  <p>
+    Síguenos:
+    <a href="https://www.instagram.com/opti.mindaisolutionssl/" target="_blank">Instagram</a> |
+    <a href="https://www.tiktok.com/?lang=es" target="_blank">Tiktok</a> |
+    
+  </p>
+</footer>
+
+<script>
+  function mostrarMensaje() {
+    alert("Gracias por tu interés en nuestros servicios. ¡Descubre cómo la IA puede transformar tu negocio!");
+  }
+  function enviarFormulario(event) {
+    event.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    alert(`¡Gracias ${nombre}! Hemos recibido tu mensaje y responderemos a ${email} pronto.`);
+    document.querySelector('form').reset();
+  }
+</script>
+
+</body>
+</html>
